@@ -52,14 +52,14 @@ int main(int argc, char** argv) {
 	// Remove all scene objects
 	moveit::planning_interface::PlanningSceneInterface psi;
 	{
-		moveit_msgs::PlanningScene rm;
-		rm.is_diff = true;
-		rm.robot_state.is_diff = true;
-		rm.robot_state.attached_collision_objects.resize(1);
-		rm.robot_state.attached_collision_objects[0].object.operation = moveit_msgs::CollisionObject::REMOVE;
-		rm.world.collision_objects.resize(1);
-		rm.world.collision_objects[0].operation = moveit_msgs::CollisionObject::REMOVE;
-		psi.applyPlanningScene(rm);
+//		moveit_msgs::PlanningScene rm;
+//		rm.is_diff = false;
+//		rm.robot_state.is_diff = false;
+//		rm.robot_state.attached_collision_objects.resize(1);
+//		rm.robot_state.attached_collision_objects[0].object.operation = moveit_msgs::CollisionObject::REMOVE;
+//		rm.world.collision_objects.resize(1);
+//		rm.world.collision_objects[0].operation = moveit_msgs::CollisionObject::REMOVE;
+//		psi.applyPlanningScene(rm);
 	}
 
 	// Parse URDF into a planning scene
